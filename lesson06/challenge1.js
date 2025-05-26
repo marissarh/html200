@@ -1,30 +1,56 @@
-let user = prompt('Choose an Option');
-let withdraw = prompt('Withdraw Amount');
-let deposit = prompt('Deposit Amount');
-const amount = x;
+let option = prompt('Choose an Option');
+//let option = ['Q', 'W', 'D', 'B'];
+let withdraw = [ ];
+let deposit = [ ];
+let user = [option];
+
+
 
 function userOption(option){
+    
     switch(option){
         case 'Q':{
             return user;
             break;
         }
         case 'W':{
-            return withdraw [x];
+            return prompt('Withdraw Amount');
             break;
+            
             }
         case 'D':{
-            return deposit [x];
+            return prompt('Deposit Amount');
             break;
         }
         case 'B':{
-            return balance; 
-            break;
-        }
-        default:{
-            return user;
+            return alert('Balance $12.34');
+            
         }
         }
     }
-
-console.log(userOption(amount));
+    
+    alert(option);
+    console.log(userOption(option));
+    
+   
+    /*function userOption(user){
+        let option = prompt('Choose an Option');
+        if ('Q'){
+            return 'Quit Program'
+        }
+        else if (option =='W'){
+            return withdraw;
+         
+        }
+        else if(option == 'D'){
+            return deposit;
+            
+        } else if (option == 'B') {
+            return balance;
+            
+        } else{
+            return 'user';
+        }
+    }
+alert(option);
+*/
