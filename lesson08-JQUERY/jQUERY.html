@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!--insert starter code for JQuery
+    
+        <script>
+            $(document).ready(function(){
+            alert("test");
+            });
+        </script>
+        -->
+
+    <!-- In the body, add an input box with an id of "getText" and a button with an id of "clicked"
+     
+        <body>
+            >input type="text" id="getText"
+            <button id="clicked">Click Here</button>
+        </body>
+            -->
+    
+    <!-- Add a function to jQuery, when button is clicked, 
+     alert to the screen the text in the input box
+     -->
+    
+    <script>
+        $(document).ready(function () {
+            $("#clicked").click(function (event) {
+                console.log($("#getText"));
+                alert($("#getText").val());
+            });
+
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="getText">
+    <button id="clicked">Click Here</button>
+</body>
+
+</html>
