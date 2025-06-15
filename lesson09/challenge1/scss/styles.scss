@@ -1,0 +1,68 @@
+$font: sans-serif;
+$padding: 2% 0 2% 4%;
+$margin: 2%;
+
+@import "/challenge1/scss/colors.scss";
+@import "/challenge1/scss/card-body.scss";
+
+@mixin profile(){
+        margin-top: 4%;
+        color: $dark-grey;
+        text-align: center;
+}
+
+body{
+    padding: $padding;
+    border: 40px solid $border-color;
+}
+
+section{
+    h1{
+        margin-bottom: $margin;
+        font-family: $font;
+    }
+    h2{
+        margin-top: $margin;
+        font-family: $font;
+        font-style: italic;
+        font-weight: 400;
+        font-size: medium;
+    }
+    .profile{
+        @include profile;
+    }
+    
+}   
+.info{
+    width: 50%;
+}
+aside{
+    .profile{
+        @include profile;
+    }
+    ul{
+        list-style-type: none;
+        background-color: $background-color;
+        padding-top: 15%;
+        padding-bottom: 15%;
+       
+    }
+    li{
+        padding-bottom: 10px;
+        color: $light-grey;
+    }
+    .list{
+        font-weight: bold;
+        color: $light-grey;
+    }
+    .fa-brands{
+        color: $icon-blue;
+        font-size: 25px;
+        padding-right: 3px;
+    
+    }
+
+}
+img{
+    border-radius: 50%;
+}

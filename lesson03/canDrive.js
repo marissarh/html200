@@ -11,7 +11,7 @@ let x = 16;
 
 if (age>x){
     console.log(fName + ' ' + lName);
-    elseif (age<x; ){
+    elseif (age<x);{
         console.log()
     }
 }
